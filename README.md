@@ -2,7 +2,7 @@
 A simple todo list.
 
 ## Use
-1. Install Java if you don't have it
+1. Install Java 8 or higher if you don't have it
 2. Download the latest version from [here](https://ci.pantherman594.com/job/Todo/lastSuccessfulBuild/).
 3. Run the Todo.jar file.
 4. Type a task in the text field and press the Enter key on your keyboard

@@ -133,6 +133,10 @@ class Row {
         return index;
     }
 
+    String getText() {
+        return text;
+    }
+
     boolean isChecked() {
         return checked;
     }
