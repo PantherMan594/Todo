@@ -21,6 +21,7 @@ import javafx.scene.control.Tooltip;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
@@ -142,9 +143,11 @@ public class Todo extends Application {
         } else {
             title = new Text("Please use Java 8 or higher!");
             title.setFont(Font.font("Lato, Tahoma", FontWeight.NORMAL, 18));
+            title.setFill(Color.RED);
             grid.add(title, 0, 0, 4, 1);
 
             pS.setScene(scene);
+            pS.show();
         }
     }
 

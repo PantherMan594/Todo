@@ -19,6 +19,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Tooltip;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontPosture;
 import javafx.scene.text.FontWeight;
@@ -56,9 +57,11 @@ class Row {
                     if (this.checked) {
                         itemText.setStrikethrough(true);
                         itemText.setFont(Font.font(font.getFamily(), FontWeight.NORMAL, FontPosture.ITALIC, font.getSize()));
+                        itemText.setFill(Color.GRAY);
                     } else {
                         itemText.setStrikethrough(false);
                         itemText.setFont(Font.font(font.getFamily(), FontWeight.NORMAL, FontPosture.REGULAR, font.getSize()));
+                        itemText.setFill(Color.BLACK);
                     }
                     break;
                 }
@@ -72,6 +75,7 @@ class Row {
             Font font = item.getFont();
             item.setStrikethrough(true);
             item.setFont(Font.font(font.getFamily(), FontWeight.NORMAL, FontPosture.ITALIC, font.getSize()));
+            item.setFill(Color.GRAY);
         }
         grid.add(item, 1, index);
 
